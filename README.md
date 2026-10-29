@@ -25,12 +25,12 @@ classDiagram
         -string imeKorisnika
         -string nazivUredjaja
         -string opisKvara
-        -string datumPrijema
+        -std::string datumPrijema
         -int hitnostPopravke
         -string status
 
         +Prijava()
-        +Prijava(int id, string imeKorisnika, string nazivUredjaja, string opisKvara, string datumPrijema, int hitnostPopravke, string status)
+        +Prijava(int id, string imeKorisnika, string nazivUredjaja, string opisKvara, std::string datumPrijema, int hitnostPopravke, string status)
         +int getId()
         +void setId(int id)
         +string getImeKorisnika()
@@ -39,8 +39,8 @@ classDiagram
         +void setNazivUredjaja(string nazivUredjaja)
         +string getOpisKvara()
         +void setOpisKvara(string opisKvara)
-        +string getDatumPrijema()
-        +void setDatumPrijema(string datumPrijema)
+        +std::string getDatumPrijema()
+        +void setDatumPrijema(std::string datumPrijema)
         +int getHitnostPopravke()
         +void setHitnostPopravke(int hitnostPopravke)
         +string getStatus()
