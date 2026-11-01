@@ -5,9 +5,9 @@ Node::Node()
     this->next = nullptr;
 }
 
-Node::Node(Prijava Prijava)
+Node::Node(Prijava prijava)
 {
-    this->prijava = prijava;
+    this->setPrijava(prijava);
     this->next = nullptr;
 }
 
@@ -18,7 +18,7 @@ Prijava *Node::getPrijava()
 
 void Node::setPrijava(Prijava prijava)
 {
-    setPrijava(prijava);
+    this->prijava = prijava;
 }
 
 Node *Node::getNext()

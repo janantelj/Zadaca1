@@ -63,7 +63,8 @@ classDiagram
 
     class LinkedList{
         -Node* head
-        -int velicina
+        -Node* tail
+        -int size
 
         +LinkedList()
         +Node* getHead()

@@ -91,6 +91,6 @@ void Prijava::setStatus(std::string status)
 
 void Prijava::ispisiPrijavu()
 {
-    // 19;Nemanja Milićević;Ruter Asus;Bežična mreža nije dostupna;2026-10-26;7;završena
-    std::cout << this->id << ";" << this->imeKorisnika << ";" << this->nazivUredjaja << ";" << this->opisKvara << ";" << this->datumPrijema << ";" << this->status << std::endl;
+    // Format: 19;Nemanja Milićević;Ruter Asus;Bežična mreža nije dostupna;2026-10-26;7;završena
+    std::cout << this->id << ";" << this->imeKorisnika << ";" << this->nazivUredjaja << ";" << this->opisKvara << ";" << this->datumPrijema << ";" << this->hitnostPopravke << ";" << this->status << std::endl;
 }
