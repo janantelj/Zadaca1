@@ -78,6 +78,7 @@ classDiagram
 
     class Stack{
         -Node* topOfStack
+        -int size
 
         +Stack()
         +bool isEmpty()

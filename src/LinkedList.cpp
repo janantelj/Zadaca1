@@ -7,6 +7,11 @@ LinkedList::LinkedList()
     this->size = 0;
 }
 
+int LinkedList::getSize()
+{
+    return this->size;
+}
+
 Node *LinkedList::getHead()
 {
     return this->head;

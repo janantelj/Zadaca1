@@ -13,6 +13,7 @@ private:
 
 public:
     LinkedList();
+    int getSize();
     Node *getHead();
     Node *getTail();
     void dodaj(Prijava prijava);
