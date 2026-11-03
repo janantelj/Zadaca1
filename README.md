@@ -67,6 +67,7 @@ classDiagram
         -int size
 
         +LinkedList()
+        +int getsize()
         +Node* getHead()
         +void dodaj(Prijava prijava)
         +Prijava* pretraziPoId(int id)
@@ -81,6 +82,7 @@ classDiagram
         -int size
 
         +Stack()
+        +int getSize()
         +bool isEmpty()
         +void push(Prijava prijava)
         +void pop(Prijava& prijava)
@@ -89,8 +91,10 @@ classDiagram
 
     class PriorityQueue{
         -Node* head
+        -int size
 
         +PriorityQueue()
+        +int getSize()
         +bool isEmpty()
         +Node* getHead()
         +void enqueue(Prijava prijava)

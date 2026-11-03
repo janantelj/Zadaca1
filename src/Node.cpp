@@ -1,4 +1,6 @@
 #include "Node.hpp"
+#include <iostream>
+#include <string>
 
 Node::Node()
 {

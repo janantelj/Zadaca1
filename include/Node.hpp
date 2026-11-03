@@ -1,7 +1,5 @@
 #pragma once
 #include "Prijava.hpp"
-#include <iostream>
-#include <string>
 
 class Node
 {

@@ -1,4 +1,6 @@
 #include "LinkedList.hpp"
+#include <string>
+#include <iostream>
 
 LinkedList::LinkedList()
 {
@@ -60,7 +62,7 @@ void LinkedList::ispisiSve()
     }
 }
 
-// TODO dodati flag i neka funkcija ispisuje poruku ako nema nijedna prijava sad atim tatusom
+// TODO: dodati flag i neka funkcija ispisuje poruku ako nema nijedna prijava sad atim tatusom
 void LinkedList::ispisiSvePoStatusu(std::string status)
 {
     std::cout << "Prikaz svih prijava sa statusom " << status << ":" << std::endl;
@@ -89,7 +91,7 @@ void LinkedList::ispisiSvePoStatusu(std::string status)
     }
 }
 
-// TODO dodati flag i nek funkcija ispisuje poruku ako nema nijedan u datom opsegu
+// TODO: dodati flag i nek funkcija ispisuje poruku ako nema nijedan u datom opsegu
 void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)
 {
     Node *tmp = this->getHead();

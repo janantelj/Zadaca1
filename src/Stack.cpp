@@ -14,7 +14,7 @@ int Stack::getSize()
 
 bool Stack::isEmpty()
 {
-    return (this->topOfStack == nullptr);
+    return (this->size == 0);
 }
 
 Prijava *Stack::peek()

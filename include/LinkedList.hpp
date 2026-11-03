@@ -1,8 +1,6 @@
 #pragma once
 #include "Node.hpp"
 #include "Prijava.hpp"
-#include <string>
-#include <iostream>
 
 class LinkedList
 {
