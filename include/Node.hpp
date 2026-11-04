@@ -12,7 +12,7 @@ public:
     Node(Prijava prijava);
     Prijava *getPrijava();
     void setPrijava(Prijava prijava);
-    Node *getNext();
+    Node *getNext()const;
     void setNext(Node *next);
     ~Node();
 };

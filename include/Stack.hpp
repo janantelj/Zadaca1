@@ -9,9 +9,9 @@ private:
 
 public:
     Stack();
-    int getSize();
-    bool isEmpty();
-    Prijava *peek();
+    int getSize()const;
+    bool isEmpty()const;
+    Prijava *peek()const;
     void push(Prijava prijava);
     void pop(Prijava &prijava);
     ~Stack();

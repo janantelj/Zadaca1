@@ -19,7 +19,7 @@ Prijava::Prijava(int id, std::string imeKorisnika, std::string nazivUredjaja, st
     this->status = status;
 }
 
-int Prijava::getId()
+int Prijava::getId()const
 {
     return this->id;
 }
@@ -29,7 +29,7 @@ void Prijava::setId(int id)
     this->id = id;
 }
 
-std::string Prijava::getImeKorisnika()
+std::string Prijava::getImeKorisnika()const
 {
     return this->imeKorisnika;
 }
@@ -39,7 +39,7 @@ void Prijava::setImeKorisnika(std::string imeKorisnika)
     this->imeKorisnika = imeKorisnika;
 }
 
-std::string Prijava::getNazivUredjaja()
+std::string Prijava::getNazivUredjaja()const
 {
     return this->nazivUredjaja;
 }
@@ -49,7 +49,7 @@ void Prijava::setNazivUredjaja(std::string nazivUredjaja)
     this->nazivUredjaja = nazivUredjaja;
 }
 
-std::string Prijava::getOpisKvara()
+std::string Prijava::getOpisKvara()const
 {
     return this->opisKvara;
 }
@@ -59,7 +59,7 @@ void Prijava::setOpisKvara(std::string opisKvara)
     this->opisKvara = opisKvara;
 }
 
-std::string Prijava::getDatumPrijema()
+std::string Prijava::getDatumPrijema()const
 {
     return this->datumPrijema;
 }
@@ -69,7 +69,7 @@ void Prijava::setDatumPrijema(std::string datumPrijema)
     this->datumPrijema = datumPrijema;
 }
 
-int Prijava::getHitnostPopravke()
+int Prijava::getHitnostPopravke()const
 {
     return this->hitnostPopravke;
 }
@@ -79,7 +79,7 @@ void Prijava::setHitnostPopravke(int hitnostPopravke)
     this->hitnostPopravke = hitnostPopravke;
 }
 
-std::string Prijava::getStatus()
+std::string Prijava::getStatus()const
 {
     return this->status;
 }
@@ -89,7 +89,7 @@ void Prijava::setStatus(std::string status)
     this->status = status;
 }
 
-void Prijava::ispisiPrijavu()
+void Prijava::ispisiPrijavu()const
 {
     // Format: 19;Nemanja Milićević;Ruter Asus;Bežična mreža nije dostupna;2026-10-26;7;završena
     std::cout << this->id << ";" << this->imeKorisnika << ";" << this->nazivUredjaja << ";" << this->opisKvara << ";" << this->datumPrijema << ";" << this->hitnostPopravke << ";" << this->status << std::endl;

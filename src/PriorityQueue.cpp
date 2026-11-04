@@ -7,17 +7,17 @@ PriorityQueue::PriorityQueue()
     this->head = nullptr;
 }
 
-int PriorityQueue::getSize()
+int PriorityQueue::getSize()const
 {
     return this->size;
 }
 
-bool PriorityQueue::isEmpty()
+bool PriorityQueue::isEmpty()const
 {
     return (this->size == 0);
 }
 
-Node *PriorityQueue::getHead()
+Node *PriorityQueue::getHead()const
 {
     return this->head;
 }

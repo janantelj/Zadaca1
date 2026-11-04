@@ -11,13 +11,13 @@ private:
 
 public:
     LinkedList();
-    int getSize();
-    Node *getHead();
-    Node *getTail();
+    int getSize()const;
+    Node *getHead()const;
+    Node *getTail()const;
     void dodaj(Prijava prijava);
-    Prijava *pretraziPoId(int id);
-    void ispisiSve();
-    void ispisiSvePoStatusu(std::string status);
-    void ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma);
+    Prijava *pretraziPoId(int id)const;
+    void ispisiSve()const;
+    void ispisiSvePoStatusu(std::string status)const;
+    void ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)const;
     ~LinkedList();
 };

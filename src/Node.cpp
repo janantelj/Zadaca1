@@ -23,7 +23,7 @@ void Node::setPrijava(Prijava prijava)
     this->prijava = prijava;
 }
 
-Node *Node::getNext()
+Node *Node::getNext() const
 {
     return this->next;
 }

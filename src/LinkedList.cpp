@@ -9,17 +9,17 @@ LinkedList::LinkedList()
     this->size = 0;
 }
 
-int LinkedList::getSize()
+int LinkedList::getSize()const
 {
     return this->size;
 }
 
-Node *LinkedList::getHead()
+Node *LinkedList::getHead()const
 {
     return this->head;
 }
 
-Node *LinkedList::getTail()
+Node *LinkedList::getTail()const
 {
     return this->tail;
 }
@@ -39,7 +39,7 @@ void LinkedList::dodaj(Prijava prijava)
     this->size++;
 }
 
-Prijava *LinkedList::pretraziPoId(int id)
+Prijava *LinkedList::pretraziPoId(int id)const
 {
     Node *tmp = this->head;
     while (tmp && tmp->getPrijava()->getId() <= id)
@@ -51,7 +51,7 @@ Prijava *LinkedList::pretraziPoId(int id)
     return nullptr;
 }
 
-void LinkedList::ispisiSve()
+void LinkedList::ispisiSve()const
 {
     std::cout << "Prikaz svih prijava u sistemu: " << std::endl;
     Node *tmp = this->head;
@@ -63,7 +63,7 @@ void LinkedList::ispisiSve()
 }
 
 // TODO: dodati flag i neka funkcija ispisuje poruku ako nema nijedna prijava sad atim tatusom
-void LinkedList::ispisiSvePoStatusu(std::string status)
+void LinkedList::ispisiSvePoStatusu(std::string status)const
 {
     std::cout << "Prikaz svih prijava sa statusom " << status << ":" << std::endl;
     Node *tmp = this->getHead();
@@ -92,7 +92,7 @@ void LinkedList::ispisiSvePoStatusu(std::string status)
 }
 
 // TODO: dodati flag i nek funkcija ispisuje poruku ako nema nijedan u datom opsegu
-void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)
+void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)const
 {
     Node *tmp = this->getHead();
     int found = 0;

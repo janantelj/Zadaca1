@@ -9,9 +9,9 @@ private:
 
 public:
     PriorityQueue();
-    int getSize();
-    bool isEmpty();
-    Node *getHead();
+    int getSize()const;
+    bool isEmpty()const;
+    Node *getHead()const;
     void enqueue(Prijava prijava);
     void dequeue(Prijava &prijava);
     ~PriorityQueue();

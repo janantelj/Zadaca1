@@ -7,17 +7,17 @@ Stack::Stack()
     int size = 0;
 }
 
-int Stack::getSize()
+int Stack::getSize()const
 {
     return this->size;
 }
 
-bool Stack::isEmpty()
+bool Stack::isEmpty()const
 {
     return (this->size == 0);
 }
 
-Prijava *Stack::peek()
+Prijava *Stack::peek()const
 {
     return this->topOfStack->getPrijava();
 }
