@@ -27,7 +27,7 @@ int main()
         std::cout << " (4) Pregled i pretraga prijava\n";
         std::cout << " (5) Filtriranje prijava po opsegu datuma\n";
         std::cout << " (0) Kraj rada i čuvanje evidencije\n";
-        std::cout << "=====================================================\n";
+        std::cout << "==============================================\n";
         std::cout << "Unesite broj opcije: ";
         std::cin >> izbor;
         std::cin.ignore();
@@ -63,6 +63,7 @@ int main()
             std::cin >> datumPrijema;
             novaPrijava.setDatumPrijema(datumPrijema);
 
+            // ASSUME 1 <= hitnost <= 10
             std::cout << "Unesite hitnost popravke (1-10): ";
             std::cin >> hitnost;
             novaPrijava.setHitnostPopravke(stoi(hitnost));

@@ -9,17 +9,17 @@ LinkedList::LinkedList()
     this->size = 0;
 }
 
-int LinkedList::getSize()const
+int LinkedList::getSize() const
 {
     return this->size;
 }
 
-Node *LinkedList::getHead()const
+Node *LinkedList::getHead() const
 {
     return this->head;
 }
 
-Node *LinkedList::getTail()const
+Node *LinkedList::getTail() const
 {
     return this->tail;
 }
@@ -39,7 +39,7 @@ void LinkedList::dodaj(Prijava prijava)
     this->size++;
 }
 
-Prijava *LinkedList::pretraziPoId(int id)const
+Prijava *LinkedList::pretraziPoId(int id) const
 {
     Node *tmp = this->head;
     while (tmp && tmp->getPrijava()->getId() <= id)
@@ -51,7 +51,7 @@ Prijava *LinkedList::pretraziPoId(int id)const
     return nullptr;
 }
 
-void LinkedList::ispisiSve()const
+void LinkedList::ispisiSve() const
 {
     std::cout << "Prikaz svih prijava u sistemu: " << std::endl;
     Node *tmp = this->head;
@@ -63,36 +63,34 @@ void LinkedList::ispisiSve()const
 }
 
 // TODO: dodati flag i neka funkcija ispisuje poruku ako nema nijedna prijava sad atim tatusom
-void LinkedList::ispisiSvePoStatusu(std::string status)const
+void LinkedList::ispisiSvePoStatusu(std::string status) const
 {
+    int count = 0;
     std::cout << "Prikaz svih prijava sa statusom " << status << ":" << std::endl;
     Node *tmp = this->getHead();
-    if (status == "na čekanju")
+
+    if (status == "na čekanju" || status == "završena")
     {
         for (int i = 0; i < this->size; i++)
         {
-            if (tmp->getPrijava()->getStatus() == "na čekanju")
+            if (tmp->getPrijava()->getStatus() == status)
+            {
                 tmp->getPrijava()->ispisiPrijavu();
+                count++;
+            }
             tmp = tmp->getNext();
         }
+        if (count == 0)
+            std::cout << "Ne postoji nijedna prijava sa zadatim statusom." << std::endl;
     }
-    else if (status == "završena")
-    {
-        for (int i = 0; i < this->size; i++)
-        {
-            if (tmp->getPrijava()->getStatus() == "završena")
-                tmp->getPrijava()->ispisiPrijavu();
-            tmp = tmp->getNext();
-        }
-    }
+
     else
     {
         std::cout << "Status " << status << "nije validan. Validni statusi su: 'na čekanju' i 'završena' " << std::endl;
     }
 }
 
-// TODO: dodati flag i nek funkcija ispisuje poruku ako nema nijedan u datom opsegu
-void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)const
+void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma) const
 {
     Node *tmp = this->getHead();
     int found = 0;
@@ -113,14 +111,19 @@ void LinkedList::ispisiSvePoDatumu(std::string odDatuma, std::string doDatuma)co
         int best = i;
         for (int j = i + 1; j < found; j++)
         {
-            if ((arr[j]->getDatumPrijema() <= arr[i]->getDatumPrijema()) || ((arr[j]->getDatumPrijema() == arr[i]->getDatumPrijema()) && arr[j]->getId() < arr[i]->getId()))
+            if ((arr[j]->getDatumPrijema() < arr[best]->getDatumPrijema()) || ((arr[j]->getDatumPrijema() == arr[best]->getDatumPrijema()) && arr[j]->getId() < arr[best]->getId()))
                 best = j;
         }
         Prijava *tmp = arr[i];
         arr[i] = arr[best];
         arr[best] = tmp;
     }
-
+    if (found == 0)
+    {
+        std::cout << "Ne postoji nijedna prijava u zadatom opsegu datuma." << std::endl;
+        delete[] arr;
+        return;
+    }
     std::cout << "Prikaz svih prijava u sistemu sa datumom prijema izmedju " << odDatuma << " i " << doDatuma << " sortirano rastuce po datumu, a zatim po ID broju: " << std::endl;
     for (int i = 0; i < found; i++)
         arr[i]->ispisiPrijavu();
