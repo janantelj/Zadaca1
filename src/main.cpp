@@ -14,7 +14,7 @@ int main()
     Stack stack;
     int maxId = 0;
     readFile(llist, pqueue, maxId);
-    std::cout << "Ucitano je " << llist.getSize() << " prijava iz evidencije. Broj prijava sa statusom 'na čekanju je " << pqueue.getSize() << "." << std::endl;
+    std::cout << "Ucitano je " << llist.getSize() << " prijava iz evidencije. Broj prijava sa statusom 'na čekanju je' " << pqueue.getSize() << "." << std::endl;
 
     // MENU
     int flag = 1, izbor = -1;
