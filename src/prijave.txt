@@ -1,0 +1,22 @@
+1;Marko Petrović;Laptop Lenovo ThinkPad;Uređaj se ne uključuje;2026-10-12;10;na čekanju
+2;Ana Jovanović;Štampač HP LaserJet;Papir se zaglavljuje pri štampanju;2026-10-12;5;završena
+3;Nikola Savić;Monitor Dell;Slika povremeno treperi;2026-10-13;4;na čekanju
+4;Jelena Kovačević;Desktop računar;Računar se samostalno gasi;2026-10-13;9;na čekanju
+5;Stefan Ilić;Mobilni telefon Samsung;Baterija se brzo prazni;2026-10-14;3;završena
+6;Milica Đurić;Ruter TP-Link;Veza se prekida više puta dnevno;2026-10-14;8;na čekanju
+7;Petar Lukić;Tastatura Logitech;Pojedini tasteri ne reaguju;2026-10-15;2;na čekanju
+8;Sara Babić;Laptop Acer;Ventilator proizvodi jak zvuk;2026-10-15;6;na čekanju
+9;Luka Stanković;Skener Canon;Skener nije prepoznat na računaru;2026-10-16;4;završena
+10;Ivana Radić;Projektor Epson;Projektor se pregrijava i isključuje;2026-10-16;9;na čekanju
+11;Miloš Vuković;Miš Logitech;Točkić za pomjeranje ne radi;2026-10-19;1;na čekanju
+12;Teodora Marić;Tablet Lenovo;Ekran ne reaguje na dodir;2026-10-19;7;na čekanju
+13;Filip Popović;Laptop HP;Uređaj ne prepoznaje disk;2026-10-20;10;na čekanju
+14;Marija Pavlović;Štampač Brother;Otisak je blijed i neujednačen;2026-10-20;5;na čekanju
+15;David Knežević;Monitor LG;Ekran ostaje taman nakon uključivanja;2026-10-21;8;završena
+16;Nina Todorović;Slušalice Sony;Zvuk se čuje samo na jednoj strani;2026-10-21;2;na čekanju
+17;Aleksandar Gajić;Desktop računar;Operativni sistem se ne pokreće;2026-10-22;9;na čekanju
+18;Sofija Božić;Veb kamera Logitech;Slika je zamućena tokom poziva;2026-10-23;3;na čekanju
+19;Nemanja Milićević;Ruter Asus;Bežična mreža nije dostupna;2026-10-26;7;završena
+20;Dunja Perić;Laptop Dell;Baterija se ne puni;2026-10-26;6;na čekanju
+21;Anja Kojić;Smartić satić;Ne rade kazaljke;2026-11-05;10;na čekanju
+22;A;A;A;2021-01-01;5;na čekanju

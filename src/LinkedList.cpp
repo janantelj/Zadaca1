@@ -67,27 +67,27 @@ void LinkedList::ispisiSvePoStatusu(std::string status)const
 {
     std::cout << "Prikaz svih prijava sa statusom " << status << ":" << std::endl;
     Node *tmp = this->getHead();
-    if (status == "na cekanju")
+    if (status == "na čekanju")
     {
         for (int i = 0; i < this->size; i++)
         {
-            if (tmp->getPrijava()->getStatus() == "na cekanju")
+            if (tmp->getPrijava()->getStatus() == "na čekanju")
                 tmp->getPrijava()->ispisiPrijavu();
             tmp = tmp->getNext();
         }
     }
-    else if (status == "zavrsena")
+    else if (status == "završena")
     {
         for (int i = 0; i < this->size; i++)
         {
-            if (tmp->getPrijava()->getStatus() == "zavrsena")
+            if (tmp->getPrijava()->getStatus() == "završena")
                 tmp->getPrijava()->ispisiPrijavu();
             tmp = tmp->getNext();
         }
     }
     else
     {
-        std::cout << "Status " << status << "nije validan. Validni statusi su: 'na cekanju' i 'zavrsena' " << std::endl;
+        std::cout << "Status " << status << "nije validan. Validni statusi su: 'na čekanju' i 'završena' " << std::endl;
     }
 }
 

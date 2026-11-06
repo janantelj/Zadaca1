@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-void readFile(LinkedList &list)
+void readFile(LinkedList &list, PriorityQueue &queue, int &maxId)
 {
     std::ifstream file("prijave.txt");
 
@@ -33,12 +33,16 @@ void readFile(LinkedList &list)
         prijava.setStatus(status);
 
         list.dodaj(prijava);
+        if (prijava.getId() > maxId)
+            maxId = prijava.getId();
+        if (status == "na čekanju")
+            queue.enqueue(prijava);
     }
 }
 
 void writeFile(const LinkedList &list)
 {
-    std::ofstream file("prijava.txt");
+    std::ofstream file("prijave.txt");
     if (!file.is_open())
     {
         std::cout << "Neuspjesno otvaranje fajla." << std::endl;
@@ -54,6 +58,8 @@ void writeFile(const LinkedList &list)
              << tmp->getPrijava()->getNazivUredjaja()
              << ";" << tmp->getPrijava()->getOpisKvara() << ";"
              << tmp->getPrijava()->getDatumPrijema() << ";"
+             << tmp->getPrijava()->getHitnostPopravke() << ";"
              << tmp->getPrijava()->getStatus() << "\n";
+        tmp = tmp->getNext();
     }
 }
