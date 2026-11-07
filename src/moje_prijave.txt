@@ -1,5 +1,5 @@
 1;Igor Simic;Graficka karta RTX 3060;Pregrijavanje i pad fps-a;2026-11-01;8;na čekanju
-2;Elena Vranic;Maticna ploca Asus;Ne prepoznaje RAM memoriju;2026-11-02;9;na čekanju
+2;Elena Vranic;Maticna ploca Asus;Ne prepoznaje RAM memoriju;2026-11-02;9;završena
 3;Bojan Nedic;Napajanje Seasonic;Cuje se zujanje i pucketanje;2026-11-02;9;na čekanju
 4;Milena Topic;SSD Kingston;Sistem ne vidi particiju;2026-11-03;4;završena
-5;Dejan Savic;Web kamera Logitech;Slika treperi;2026-11-04;2;na čekanju
+5;Dejan Savic;Web kamera Logitech;Slika treperi tokom poziva;2026-11-04;2;na čekanju
